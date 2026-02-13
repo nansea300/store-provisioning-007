@@ -1,0 +1,11 @@
+mysql:
+  image: mysql:8.0
+  database: wordpress
+  user: wpuser
+  password: wppassword
+  rootPassword: rootpassword
+
+wordpress:
+  image: wordpress:6.4-apache
+  serviceType: NodePort
+  nodePort: 30007
